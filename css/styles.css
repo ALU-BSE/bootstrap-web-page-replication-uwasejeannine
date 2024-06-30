@@ -135,6 +135,7 @@ h2 {
     line-height: 1.6;
 }
 
+
 /* For screens smaller than 768px */
 @media (max-width: 767px) {
     #services .row.align-items-center {
