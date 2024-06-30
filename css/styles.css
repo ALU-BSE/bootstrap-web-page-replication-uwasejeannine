@@ -1,32 +1,34 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #000;
+    color: #fff;
 }
 
 .navbar {
-    background-color: #343a40;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
 }
 
 .navbar-brand {
-    color: #ffffff;
+    color: #ffa500;
     font-weight: bold;
-    font-size: 24px; /* Increase font size for navbar brand */
-    
+    font-size: 24px;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff;
+    color: #fff;
     margin-right: 20px;
-    font-size: 18px; /* Increase font size for navbar links */
+    font-size: 18px;
+    text-transform: uppercase;
     text-decoration: none;
-
 }
-.navbar-toggler-icon {
-    background-color: #ffffff;
+
+.navbar-nav .nav-link:hover {
+    color: #ffa500;
 }
 
 #hero {
-    background: url('../assets/images/GettyImages-998025222-cbe0dc3.webp') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/lion-Namibia.webp') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -35,68 +37,192 @@ body {
 }
 
 #hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
+    color: #ffa500;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-#portfolio .row {
-    display: flex; /* Use Flexbox for the row */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Adjust the space between items */
-}
-
-.portfolio-item {
-    width: 100%; /* Ensure each item takes full width of column */
-    text-align: center; /* Center the content */
-    margin-bottom: 20px; /* Optional: Add margin bottom */
-}
-
-.portfolio-item img {
-    width: 100%; /* Ensure each image fills its parent container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the container while preserving aspect ratio */
-    border-radius: 30px;
-}
-
-#team .row {
-    display: flex; /* Use Flexbox for the row */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Adjust the space between items */
-}
-
-.team{
-    width: 100%; /* Ensure each item takes full width of column */
-    text-align: center; /* Center the content */
-    margin-bottom: 20px; /* Optional: Add margin bottom */
-}
-
-.team img {
-    width: 100%; /* Ensure each image fills its parent container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the container while preserving aspect ratio */
-    border-radius: 30px;
-}
-
 
 #hero p {
     font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
-#services, #portfolio, #team, #contact {
+section {
     padding: 80px 0;
 }
 
-.team-member h3 {
-    margin-top: 10px;
+h2 {
+    color: #ffa500;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #111;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Add or update these styles in your CSS file */
+
+#team .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.team-member {
+    flex: 0 0 auto;
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffa500;
+    margin-bottom: 15px;
+}
+
+/* Media query for smaller screens */
+
+.btn-primary {
+    background-color: #ffa500;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #ff8c00;
+}
+
+/* About Section Styles */
+#services {
+    background-color: #111;
+    color: #fff;
+}
+
+#services h2 {
+    color: #ffa500;
+    margin-bottom: 20px;
+}
+
+#services img {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+}
+
+#services p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+    #services .row.align-items-center {
+        flex-direction: column-reverse;
+    }
+    
+    #services .col-md-6:first-child {
+        margin-top: 30px;
+    }
+}
+/* Contact Section Styles */
+#contact .container {
+    max-width: 600px; /* Adjust this value as needed */
+    margin: 0 auto;
+}
+
+#contact form {
+    width: 100%;
+}
+
+#contact .form-control {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ffa500;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+#contact .form-control:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+}
+
+#contact label {
+    color: #ffa500;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#contact textarea.form-control {
+    height: 150px;
+}
+
+#contact .btn-primary {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #ffa500;
+    border: none;
+}
+
+#contact .btn-primary:hover {
+    background-color: #ff8c00;
+}
+
+/* Placeholder text color */
+#contact ::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* For WebKit browsers */
+#contact ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* For Firefox 19+ */
+#contact ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* For IE 10+ */
+#contact :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 footer {
-    background-color: #343a40;
-    color: #ffffff;
+    background-color: #111;
+    color: #fff;
     padding: 20px 0;
 }
-#lonem{
-    border-radius: 30px;
-    width: 40;
+
+/* Add some subtle animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
 }
