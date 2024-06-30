@@ -1,34 +1,21 @@
-# Save the Lions - Bootstrap 5 Website
 
-Welcome to the Save the Lions project, a Bootstrap 5 website template customized for lion conservation efforts.
+## Customizations
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Setup](#setup)
-- [Customization](#customization)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Credits](#credits)
+1. **Color Scheme**: The color scheme has been customized to a dark theme with accents of orange.
+2. **Content**: Placeholder text and images have been replaced with relevant content about lion conservation.
+3. **Navigation**: Smooth scrolling has been added to navigation links.
+4. **Styling**: Additional custom CSS styles have been added to enhance the visual appeal and responsiveness.
 
-## Introduction
+## How to Run
 
-This project is a customized Bootstrap 5 website aimed at raising awareness about lion conservation. The website includes sections such as navigation, hero banner, about, portfolio, team, contact, and footer.
+1. Clone the repository: https://github.com/ALU-BSE/bootstrap-web-page-replication-uwasejeannine.git
+2. Open `index.html` in a web browser to view the website.
 
-## Features
+## Testing
 
-- Fully responsive layout using Bootstrap 5 grid system.
-- Customized color scheme and design elements.
-- Smooth scrolling navigation.
-- Integration of custom CSS for enhanced styling.
-- Placeholder content replaced with lion conservation-themed images and text.
+- The website is fully responsive and has been tested on different screen sizes.
+- Cross-browser compatibility has been checked in the latest versions of Chrome, Firefox, and Edge.
 
-## Setup
+## License
 
-To set up the project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ALU-BSE/bootstrap-web-page-replication-uwasejeannine.git
-
-   -then cd bootstrap-web-page-replication-uwasejeannine to accet it in your locacal machibe. THen do code . to open vs - code if it's the id you use. 
+This project is open source and available under the MIT License.
