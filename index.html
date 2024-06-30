@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Lions - Bootstrap 5 Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Save the Lions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" style="font-size: 18px; display: flex; align-items: center;">
+                    <a class="nav-link" href="#hero">Home</a>
+                    <a class="nav-link" href="#services">About</a>
+                    <a class="nav-link" href="#portfolio">Gallery</a>
+                    <a class="nav-link" href="#team">Team</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1>Save the Lions</h1>
+            <p>Protecting the King of the Jungle</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h2>About Lions</h2>
+                    <p>Lions are majestic creatures, known as the kings of the jungle.</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 order-md-2">
+                    <img src="assets/images/lion-Namibia.webp" alt="Lion Image" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse sagittis est auctor, consequat neque ut, tempus est. Integer ut lorem est.</p>
+                    <p>Proin convallis turpis sed mi efficitur, non dictum ex sodales. Phasellus lobortis ligula felis, sed tincidunt erat fermentum a.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Gallery Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Lion Gallery</h2>
+                    <p>Explore stunning images of lions in their natural habitat.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="assets/images/images (1).jpeg" class="card-img-top" alt="Lion Image 1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="assets/images/images (2).jpeg" class="card-img-top" alt="Lion Image 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="assets/images/images.jpeg" class="card-img-top" alt="Lion Image 3">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="assets/images/images.jpeg" class="card-img-top" alt="Lion Image 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Our Team</h2>
+                    <p>Meet the passionate individuals dedicated to lion conservation.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-member">
+                    <img src="assets/images/dummy-man-570x570-1.webp" alt="Conservationist 1">
+                    <h3>John Doe</h3>
+                    <p>Conservationist</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/dummy-man-570x570-1.webp" alt="Conservationist 2">
+                    <h3>Jane Smith</h3>
+                    <p>Wildlife Biologist</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/images.png" alt="Conservationist 3">
+                    <h3>Michael Johnson</h3>
+                    <p>Field Researcher</p>
+                </div>
+                   <div class="team-member">
+                    <img src="assets/images/images.png" alt="Conservationist 3">
+                    <h3>Michael Johnson</h3>
+                    <p>Field Researcher</p>
+                </div>
+            </div>
+        </div>
+    </section>
+          
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Contact Us</h2>
+                    <p>Get involved in lion conservation efforts.</p>
+                </div>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2024 Save the Lions Organization. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
